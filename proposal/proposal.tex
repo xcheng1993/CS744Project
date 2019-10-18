@@ -1,0 +1,69 @@
+\documentclass[pdftex,twocolumn,10pt,letterpaper]{article}
+\usepackage{graphicx, times}
+\usepackage{lipsum}
+
+\setlength{\textheight}{9.0in}
+\setlength{\columnsep}{0.25in}
+\setlength{\textwidth}{6.50in}
+\setlength{\topmargin}{0.0in}
+\setlength{\headheight}{0.0in}
+\setlength{\headsep}{0.0in}
+\setlength{\parindent}{1em}
+
+\begin{document}
+\title{My Interesting Course Project for CS 744}
+\author{Author names and Group number go here}
+\date{}
+
+\interfootnotelinepenalty=10000
+
+\maketitle
+
+\section{Introduction}
+Introduction for my project that uses CloudLab~\cite{RicciEide:login14}.
+\lipsum[4-11]
+ 
+\section{Related Work}
+
+Ever since the first human genome was sequenced in, the cost of sequencing a complete genome has been reduced from 3 billion dollars to 1000 dollars [1]. This affordability has allowed scientists to do intensive research. One of the most popular approach would be the genome-wide association study (GWAS). GWAS is a statistical method to identify associations between phenotypes, the observable traits such as diseases like HIV, and Single nucleotide polymorphisms (SNPs). SNPs are defined as a single nucleotide variation in a DNA sequence that occurs with minimal frequency in a population. It can serve as markers of genomic region. Since only a small portion of them contributes to the differences in phenotypes, identifying relevant SNPs which contributes to phenotype differences is possible and viable approach to study human genome.
+\par There have already been many successful GWAS cases. For example, scientists have proved the associate between Complement Factor H gene and age-related macular degeneration [2]. With this kind of report, GWAS can be used to predict potential risk of certain diseases so that they are prevented or treated better.
+Even though GWAS has been proved effective, it still faces challenges below:
+\begin{itemize}
+\item Privacy: Since genetic information contains potentially many information including personal traits, health state, familiar relationship and other sensitive information, sharing this data is against most people's interest. There are many studies showing that with the development in genomics, simple anonymization is not enough to prevent reidentification. For example, here it states that one could be uniquely identified with only 75 independent SNPs [3]. Therefore, researchers are urging for a safe and efficient way to access the genome data.
+
+\item Scalability: Generally, genome data is so large that each genome would consist of 200GB raw data. It still cost 100MB to 200MB after some processing[4]. And in general, a sample size on the order of hundreds or even thousands of samples is required to identify a reasonable association. As a result, a system to access large amount of genome data is required.
+\end{itemize}
+
+\section{Timeline and Evaluation Plan}
+For evaluating our project we plan to do the following:
+\begin{itemize}
+  \item Measure throughput, latency 
+  \item Scale to 100 machines.
+\end{itemize}
+
+Overall our timeline is:
+
+\begin{itemize}
+  \item Nov 1: Run experiments 
+  \item Dec 15: Write Final Report
+\end{itemize}
+
+{
+\bibliographystyle{abbrv}
+\bibliography{ref}
+}
+
+\begin{thebibliography}{9}
+\bibitem{acceleratedata}
+Grishin, D., Obbad, K., Estep, P., Quinn, K., Wait Zaranek, S., Wait Zaranek, A., Vandewege, W., Clegg, T., César, N., Cifric, M. and Church, G.
+(2018) Accelerating Genomic Data Generation and Facilitating Genomic Data Access Using Decentralization,
+\textit{Privacy-Preserving Technologies and Equitable Compensation. Blockchain in Healthcare Today. }
+1
+
+
+
+\end{thebibliography}
+
+
+
+\end{document}
